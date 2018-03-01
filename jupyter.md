@@ -1,6 +1,6 @@
-#### Jupyter setup instruction on CentOS 7 VirtualBox
+### Jupyter setup instruction on CentOS 7 VirtualBox
 
-###### I. Create CentOS 7 virtualbox VM
+#### I. Create CentOS 7 virtualbox VM
 
 a). Create a CentOS 7 virtualbox VM with two network interface(NAT and Host only Adapter).
 
@@ -8,7 +8,7 @@ b). Setup SSH server on the VM.
 
 c). Login to VM from host machine to VM via ssh
 
-###### II. Install package dependencies
+#### II. Install package dependencies
 
 a). Install epel repo
 
@@ -18,11 +18,11 @@ a). Install epel repo
 
 \# yum groupinstall 'Development Tools'
 
-###### III. Install jupyter notebook
+#### III. Install jupyter notebook
 
 \# pip install jupyter
 
-###### IV. Setup and Configure jupyter notebook
+#### IV. Setup and Configure jupyter notebook
 
 a). Gerenate a configuration file
 
@@ -51,13 +51,13 @@ c.NotebookApp.certfile = u''
 c.NotebookApp.keyfile = u''
 c.NotebookApp.open_browser = False
 
-###### V. Confire firewall 
+#### V. Confire firewall 
 
 \# firewall-cmd --zone=public --add-port=8888/tcp --permanent
 
 \# systemctl restart firewalld
 
-###### VI. Start jupyter
+#### VI. Start jupyter
 
 \# jupyter notebook
 
