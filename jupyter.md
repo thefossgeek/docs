@@ -3,7 +3,9 @@
 ###### I. Create CentOS 7 virtualbox VM
 
 a). Create a CentOS 7 virtualbox VM with two network interface(NAT and Host only Adapter).
+
 b). Setup SSH server on the VM.
+
 c). Login to VM from host machine to VM via ssh
 
 ###### II. Install package dependencies
